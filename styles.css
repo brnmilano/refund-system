@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+:root {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+
+  /* BASE */
+  --gray-100: #1F2523;
+  --gray-200: #4D5C57;
+  --gray-300: #CDD5D2;
+  --gray-400: #E4ECE9;
+  --gray-500: #F9FBFA;
+  --white: #ffffff;
+
+  /* PRODUCT */
+  --green-100: #1F8459;
+  --green-200: #2CB178;
+
+  /* FEEDBACK */
+  --danger: #B51919
+}
