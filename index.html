@@ -11,13 +11,72 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./content.css" />
 
     <title>Sistema de Reembolso</title>
   </head>
 
   <body>
-    <h1>Sistema de Reembolso</h1>
+    <section class="header">
+      <img src="./images/logo.svg" alt="" />
+    </section>
+
+    <article class="content-wrapper">
+      <section class="refund-request">
+        <div>
+          <h1>Solicitação de reembolso</h1>
+
+          <p>
+            Informe os dados da despesa para solicitar reembolso. A despesa será
+            analisada e reembolsada em até 30 dias.
+          </p>
+        </div>
+
+        <form action="" class="form">
+          <div>
+            <label for="expense-title">Título da despesa</label>
+            <input type="text" name="expense-title" />
+          </div>
+
+          <div class="value-and-category">
+            <div>
+              <label for="amount">Valor</label>
+              <input
+                type="text"
+                name="amount"
+                id="amount"
+                placeholder="0"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="expense-category">Categoria</label>
+              <select name="expense-category">
+                <option value="" disabled selected>Selecione</option>
+                <option value="food">Alimentação</option>
+                <option value="hosting">Hospedagem</option>
+                <option value="transport">Transporte</option>
+                <option value="services">Serviços</option>
+                <option value="leisure">Lazer</option>
+                <option value="other">Outros</option>
+              </select>
+            </div>
+          </div>
+
+          <button type="submit">Adicionar despesa</button>
+        </form>
+      </section>
+
+      <section class="my-requests">
+        <div class="requests-header">
+          <h2>Minhas solicitações</h2>
+          <span>•</span>
+          <p>6 despesas</p>
+        </div>
+      </section>
+    </article>
   </body>
 
   <script src="./script.js"></script>

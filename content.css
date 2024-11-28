@@ -1,0 +1,105 @@
+.content-wrapper {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.refund-request {
+  width: 40%;
+  padding: 2.5rem;
+  background-color: var(--white);
+  border-radius: 12px;
+}
+
+.refund-request h1 {
+  color: var(--gray-100);
+  font-size: 1.5rem;
+  margin-bottom: .625rem;
+}
+
+.refund-request p {
+  color: var(--gray-200);
+  max-width: 420px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.value-and-category {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.value-and-category div {
+  width: 100%;
+}
+
+label {
+  font-size: .625rem;
+  color: var(--gray-200);
+  text-transform: uppercase;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="select"],
+select {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid var(--gray-300);
+  border-radius: 8px;
+  box-sizing: border-box;
+  outline: none;
+  background-color: var(--white);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input[type="text"]:focus,
+select:focus {
+  border-color: var(--green-200);
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: var(--green-100);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 2rem;
+}
+
+button:hover {
+  background-color: var(--green-200);
+}
+
+.my-requests {
+  width: 60%;
+  padding: 2.5rem;
+  background-color: var(--white);
+  border-radius: 12px;
+}
+
+.requests-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.requests-header h2 {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.requests-header p {
+  font-size: .625rem;
+  color: var(--gray-200);
+  text-transform: uppercase;
+}
